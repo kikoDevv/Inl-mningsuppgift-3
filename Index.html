@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="sv"> <!--språket är sätt på svenska-->
     <head>
-        <script src="onClick.js"></script>
+        <!--läggt till alla styling kodar här i head eftersom det var inte så många kodar för att bygga en ny fil.css-->
+        <script src="onClick.js"></script> <!--referens till min javaScript fil-->
         <style>
+            /* Här ska background staylas*/
             body{
                 padding-top: 100px;
                 display: flex;
@@ -10,6 +12,7 @@
                 background-color:rgb(152, 87, 249)
 
             }
+            /*här ska textfälten outpot stylas*/
             .textOmråde{
                 margin-right:10px;
                 padding-left: 20px;
@@ -23,6 +26,7 @@
             #text{
                 color: rgb(34, 0, 255);
             }
+            /*här ska knappen justeras*/
             #knappen{
                 background-color: yellow;
                 border-radius:100%;
@@ -36,11 +40,13 @@
         </style>
     </head>
     <body>
+        <!--här finns det HTML kodar-->
         <div class="textOmråde">
             <h1 id="text">
                 Hello, Lernia!
             </h1>
         </div>
+        <!--här har jag min knapp som när man klickar så roppar den på by() funktion som är programmerat i onClick.js filen.-->
         <button id="knappen" onclick="byt()">Kör!</button>
         
     </body>
