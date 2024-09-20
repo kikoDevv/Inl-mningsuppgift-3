@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <script src="onClick.js"></script>
+        <style>
+            body{
+                padding-top: 100px;
+                display: flex;
+                justify-content: center;
+                background-color:rgb(152, 87, 249)
+
+            }
+            .textOmråde{
+                margin-right:10px;
+                padding-left: 20px;
+                display:flex;
+                align-items:center;
+                width: 300px;
+                height:50px;
+                background-color:rgba(255, 255, 255, 0.744);
+                border-radius:20px;
+            }
+            #text{
+                color: rgb(34, 0, 255);
+            }
+            #knappen{
+                background-color: yellow;
+                border-radius:100%;
+                border-color: white;
+                cursor: pointer;
+            }
+            #knappen:hover{
+                background-color: white;
+                color:rgb(0, 0, 0);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="textOmråde">
+            <h1 id="text">
+                Hello, Lernia!
+            </h1>
+        </div>
+        <button id="knappen" onclick="byt()">Kör!</button>
+        
+    </body>
+</html>
